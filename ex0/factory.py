@@ -5,9 +5,6 @@ from .creature import Aquabub, Torragon
 
 
 class CreatureFactory(ABC):
-    def __init__(self) -> None:
-        pass
-
     @abstractmethod
     def create_base(self) -> Creature:
         pass
