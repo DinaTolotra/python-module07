@@ -15,9 +15,6 @@ class CreatureFactory(ABC):
 
 
 class FlameFactory(CreatureFactory):
-    def __init__(self) -> None:
-        super(FlameFactory, self).__init__()
-
     def create_base(self) -> Creature:
         return Flameling()
 
@@ -26,9 +23,6 @@ class FlameFactory(CreatureFactory):
 
 
 class AquaFactory(CreatureFactory):
-    def __init__(self) -> None:
-        super(AquaFactory, self).__init__()
-
     def create_base(self) -> Creature:
         return Aquabub()
 
