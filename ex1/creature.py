@@ -1,18 +1,5 @@
-from abc import ABC, abstractmethod
+from ex0 import Creature
 from .capability import HealCapability, TransformCapability
-
-
-class Creature(ABC):
-    def __init__(self, name: str, _type: str) -> None:
-        self._name = name
-        self._type = _type
-
-    @abstractmethod
-    def attack(self) -> str:
-        pass
-
-    def describe(self) -> str:
-        return f"{self._name} is a {self._type} type Creature"
 
 
 class Sproutling(Creature, HealCapability):

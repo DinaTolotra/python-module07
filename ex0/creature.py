@@ -13,6 +13,12 @@ class Creature(ABC):
     def describe(self) -> str:
         return f"{self._name} is a {self._type} type Creature"
 
+    def get_name(self) -> str:
+        return self._name
+
+    def get_type(self) -> str:
+        return self._type
+
 
 class Flameling(Creature):
     def __init__(self) -> None:
